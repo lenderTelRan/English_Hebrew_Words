@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/arima_madurai</item>
+        <item>@font/arima_madurai_black</item>
+        <item>@font/arima_madurai_extrabold</item>
+        <item>@font/arima_madurai_light</item>
+        <item>@font/ledger</item>
+        <item>@font/suez_one</item>
+
+    </array>
+</resources>

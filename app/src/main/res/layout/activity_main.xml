@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_word_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/suez_one"
+        android:gravity="center"
+        android:text="Click to Start"
+        android:textColor="@color/text_orange"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/tv_word_transcription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_word_eng"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arima_madurai"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text_orange"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_word_translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_word_transcription"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="38sp" />
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="showAllWords"
+            app:srcCompat="@drawable/button_list" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/button_next" />
+
+        <ImageButton
+            android:id="@+id/btn_lang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="switchLanguage"
+            app:srcCompat="@drawable/button_lang" />
+
+    </LinearLayout>
+
+</RelativeLayout>
